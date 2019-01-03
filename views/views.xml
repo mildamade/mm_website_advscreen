@@ -1,0 +1,58 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="mm_website_advscreen.list">
+      <field name="name">mm_website_advscreen list</field>
+      <field name="model">mm_website_advscreen.mm_website_advscreen</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="mm_website_advscreen.action_window">
+      <field name="name">mm_website_advscreen window</field>
+      <field name="res_model">mm_website_advscreen.mm_website_advscreen</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="mm_website_advscreen.action_server">
+      <field name="name">mm_website_advscreen server</field>
+      <field name="model_id" ref="model_mm_website_advscreen_mm_website_advscreen"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="mm_website_advscreen" id="mm_website_advscreen.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="mm_website_advscreen.menu_1" parent="mm_website_advscreen.menu_root"/>
+    <menuitem name="Menu 2" id="mm_website_advscreen.menu_2" parent="mm_website_advscreen.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="mm_website_advscreen.menu_1_list" parent="mm_website_advscreen.menu_1"
+              action="mm_website_advscreen.action_window"/>
+    <menuitem name="Server to list" id="mm_website_advscreen" parent="mm_website_advscreen.menu_2"
+              action="mm_website_advscreen.action_server"/>
+    -->
+  </data>
+</odoo>

@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+
+        <template id="index">
+         <title>Screen</title>
+            <t t-foreach="product" t-as="product">
+                <p> <t t-esc="product.id"/> <t t-esc="product.name"/></p>
+            </t>
+        </template>
+
+    </data>
+</odoo>
