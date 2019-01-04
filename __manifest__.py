@@ -29,7 +29,7 @@
         'views/templates.xml',
     ],
     'css': [
-        'static/css/adv.css'
+        'static/src/css/adv_css.css'
     ],
     # only loaded in demonstration mode
     'demo': [
