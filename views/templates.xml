@@ -4,15 +4,15 @@
         <template id="index">
          <title>Screen</title>
             <t t-foreach="product" t-as="product">
-                <p> 
-                 <img t-attf-src="data:image/*;base64,{{product.image}}"/>
-                    <div class="productname" >
-                    <t t-esc="product.name"/> 
-                     </div>
+                <div class="offer"> 
+                    <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
+                    <div class="productname">
+                        <t t-esc="product.name"/> 
+                    </div>
                     <div class="productprice" >
-                    <t t-esc="product.list_price"/> 
-                     </div>
-                </p>
+                        <t t-esc="product.list_price"/> 
+                    </div>
+                </div>
             </t>
         </template>
 
