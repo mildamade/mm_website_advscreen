@@ -10,6 +10,33 @@ class MmWebsiteAdvscreen(http.Controller):
             'product': Product.search([ ['categ_id', '=', 'Screen 1'] ]),
         })
 
+    @http.route('/mm_website_advscreen/screen1/', auth='public')
+    def index1(self, **kw):
+        Product = http.request.env['product.product']
+
+        return http.request.render('mm_website_advscreen.index1', {
+            'product': Product.search([ ['categ_id', '=', 'Screen 1'] ]),
+        })
+    
+        
+    @http.route('/mm_website_advscreen/screen2/', auth='public')
+    def index2(self, **kw):
+        Product = http.request.env['product.product']
+
+        return http.request.render('mm_website_advscreen.index2', {
+            'product': Product.search([ ['categ_id', '=', 'Screen 2'] ]),
+        })
+
+    @http.route('/mm_website_advscreen/screen3/', auth='public')
+    def index3(self, **kw):
+        Product = http.request.env['product.product']
+
+        return http.request.render('mm_website_advscreen.index3', {
+            'product': Product.search([ ['categ_id', '=', 'Screen 3'] ]),
+        })
+
+
+
 
 #        Product = http.request.env['product.product']
 #        return http.request.render('mm_website_advscreen.index', {
