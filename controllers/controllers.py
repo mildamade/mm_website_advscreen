@@ -7,7 +7,7 @@ class MmWebsiteAdvscreen(http.Controller):
         Product = http.request.env['product.product']
 
         return http.request.render('mm_website_advscreen.index', {
-            'product': Product.search([]),
+            'product': Product.search([ ['categ_id', '=', 'Screen 1'] ]),
         })
 
 
