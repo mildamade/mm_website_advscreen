@@ -17,7 +17,7 @@
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'website',
-    'version': '0.19',
+    'version': '0.20',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'website'],
@@ -28,9 +28,7 @@
         'views/views.xml',
         'views/templates.xml',
     ],
-    'css': [
-        'static/src/css/adv_css.css'
-    ],
+
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

@@ -3,13 +3,13 @@
 
         <template id="index">
          <title>Screen</title>
-            <t t-foreach="product" t-as="product">
-                <div class="offer"> 
+             <t t-foreach="product" t-as="product">
+                <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
-                    <div class="productname">
+                    <div class="productname" style="margin-top: -1.7em; margin-left: 0.6em; color: white; font-family: sans-serif; font-size: 4em">
                         <t t-esc="product.name"/> 
                     </div>
-                    <div class="productprice" >
+                    <div class="productprice" style="margin-top: -1em; margin-left: 16em; font-family: sans-serif; font-size: 4em;" > 
                         <t t-esc="product.list_price"/> 
                     </div>
                 </div>
