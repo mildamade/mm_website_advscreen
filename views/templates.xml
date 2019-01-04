@@ -4,7 +4,7 @@
         <template id="index">
          <title>Screen</title>
             <t t-foreach="product" t-as="product">
-                <p> <t t-esc="product.id"/> <t t-esc="product.name"/></p>
+                <p><t t-esc="product.name"/> <t t-esc="product.list_price"/> </p>
             </t>
         </template>
 
