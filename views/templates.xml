@@ -17,14 +17,18 @@
         </template>
 
         <template id="index1">
-         <title>Screen1</title>
+        <head>
+            <meta http-equiv="refresh" content="100"/>
+            <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
+            <title>Screen1</title>
+        </head>
              <t t-foreach="product" t-as="product">
-                <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
+                <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
-                    <div class="productname" style="margin-top: -1.7em; margin-left: 0.6em; color: white; font-family: sans-serif; font-size: 4em">
+                    <div class="productname">
                         <t t-esc="product.name"/> 
                     </div>
-                    <div class="productprice" style="margin-top: -1em; margin-left: 16em; font-family: sans-serif; font-size: 4em;" > 
+                    <div class="productprice" > 
                         <t t-esc="product.list_price"/> 
                     </div>
                 </div>
@@ -32,7 +36,10 @@
         </template>
 
         <template id="index2">
-         <title>Screen2</title>
+        <head>
+            <meta http-equiv="refresh" content="100"/>
+            <title>Screen2</title>
+        </head>
              <t t-foreach="product" t-as="product">
                 <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
@@ -47,8 +54,11 @@
         </template>
 
         <template id="index3">
-         <title>Screen3</title>
-             <t t-foreach="product" t-as="product">
+        <head>
+            <meta http-equiv="refresh" content="100"/>
+            <title>Screen3</title>
+        </head>
+            <t t-foreach="product" t-as="product">
                 <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
                     <div class="productname" style="margin-top: -1.7em; margin-left: 0.6em; color: white; font-family: sans-serif; font-size: 4em">
@@ -59,6 +69,7 @@
                     </div>
                 </div>
             </t>
+        
         </template>
     </data>
 </odoo>

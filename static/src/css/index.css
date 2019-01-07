@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'tungstennarrow';
+    src: url('../fonts/TungstenNarrow-Medium.ttf');
+}
+
 .offer {
     float: left;
     width: 1280px;
@@ -7,16 +12,16 @@
 }
 
 .productname {
-    margin-top: -2.7em;
-    margin-left: 0.6em;
+    margin-top: -1.2em;
+    margin-left: 0.4em;
     color: white;
-    font-family: sans-serif;
-    font-size: 4em;
+    font-family: tungstennarrow;
+    font-size: 7.5em;
 }
 
 .productprice {
-    margin-top: -1em;
-    margin-left: 13em;
-    font-family: sans-serif;
-    font-size: 4em;
+    margin-top: -1.2em;
+    margin-left: 7em;
+    font-family: tungstennarrow;
+    font-size: 9em;
 }
