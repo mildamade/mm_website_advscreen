@@ -2,18 +2,23 @@
     <data>
 
         <template id="index">
-         <title>Screen</title>
-             <t t-foreach="product" t-as="product">
-                <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
-                    <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
-                    <div class="productname" style="margin-top: -1.7em; margin-left: 0.6em; color: white; font-family: sans-serif; font-size: 4em">
+        <head>
+        <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
+        <title>Screen</title>
+        </head>
+        <div class="container">
+            <t t-foreach="product" t-as="product">
+                <div class="offer"> 
+                    <img t-attf-src="data:image/*;base64,{{product.image}}" />
+                    <div class="productname" >
                         <t t-esc="product.name"/> 
                     </div>
-                    <div class="productprice" style="margin-top: -1em; margin-left: 16em; font-family: sans-serif; font-size: 4em;" > 
-                        <t t-esc="product.list_price"/> 
+                    <div class="productprice" > 
+                        <t t-esc="product.lst_price"/> 
                     </div>
                 </div>
             </t>
+        </div>
         </template>
 
         <template id="index1">
@@ -22,54 +27,52 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen1</title>
         </head>
-             <t t-foreach="product" t-as="product">
+        <div class="container">
+            <t t-foreach="product" t-as="product">
                 <div class="offer"> 
-                    <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
-                    <div class="productname">
-                        <t t-esc="product.name"/> 
-                    </div>
-                    <div class="productprice" > 
-                        <t t-esc="product.list_price"/> 
+                    <img t-attf-src="data:image/*;base64,{{product.image}}"/>
+                       <div class="productprice" > 
+                       <t t-esc="product.lst_price"/> 
                     </div>
                 </div>
             </t>
+        </div>
         </template>
 
         <template id="index2">
         <head>
             <meta http-equiv="refresh" content="100"/>
+            <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen2</title>
         </head>
-             <t t-foreach="product" t-as="product">
-                <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
-                    <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
-                    <div class="productname" style="margin-top: -1.7em; margin-left: 0.6em; color: white; font-family: sans-serif; font-size: 4em">
-                        <t t-esc="product.name"/> 
-                    </div>
-                    <div class="productprice" style="margin-top: -1em; margin-left: 16em; font-family: sans-serif; font-size: 4em;" > 
-                        <t t-esc="product.list_price"/> 
+        <div class="container">
+            <t t-foreach="product" t-as="product">
+                <div class="offer"> 
+                    <img t-attf-src="data:image/*;base64,{{product.image}}" />
+                    <div class="productprice"  > 
+                        <t t-esc="product.lst_price"/> 
                     </div>
                 </div>
             </t>
+        </div>
         </template>
 
         <template id="index3">
         <head>
             <meta http-equiv="refresh" content="100"/>
+            <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen3</title>
         </head>
+        <div class="container">
             <t t-foreach="product" t-as="product">
-                <div class="offer" style= "float: left;  width: 1280px;  height: 1080px;    margin: 0; padding: 0"> 
-                    <img t-attf-src="data:image/*;base64,{{product.image}}" style="max-height: 1280px"/>
-                    <div class="productname" style="margin-top: -1.7em; margin-left: 0.6em; color: white; font-family: sans-serif; font-size: 4em">
-                        <t t-esc="product.name"/> 
-                    </div>
-                    <div class="productprice" style="margin-top: -1em; margin-left: 16em; font-family: sans-serif; font-size: 4em;" > 
-                        <t t-esc="product.list_price"/> 
+                <div class="offer"> 
+                    <img t-attf-src="data:image/*;base64,{{product.image}}" />
+                    <div class="productprice"  > 
+                        <t t-esc="product.lst_price"/> 
                     </div>
                 </div>
             </t>
-        
+        </div>
         </template>
     </data>
 </odoo>

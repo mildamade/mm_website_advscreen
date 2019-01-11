@@ -2,10 +2,16 @@
     font-family: 'tungstennarrow';
     src: url('../fonts/TungstenNarrow-Medium.ttf');
 }
-
+.container{    
+    width:3840px;
+    height: 2160px;
+    background-color: rgb(190,182,180);
+    overflow: hidden;
+    
+}
 .offer {
     float: left;
-    width: 1280px;
+    width:1280px;
     height: 1080px;
     margin: 0;
     padding: 0;
