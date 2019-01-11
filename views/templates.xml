@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
         <title>Screen</title>
         </head>
-        <div class="container">
+        <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" />
@@ -27,7 +27,7 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen1</title>
         </head>
-        <div class="container">
+        <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}"/>
@@ -45,7 +45,7 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen2</title>
         </head>
-        <div class="container">
+        <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" />
@@ -63,7 +63,7 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen3</title>
         </head>
-        <div class="container">
+        <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" />

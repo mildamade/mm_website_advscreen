@@ -5,7 +5,7 @@
 .container{    
     width:3840px;
     height: 2160px;
-    background-color: rgb(190,182,180);
+    background-color: rgba(190,182,180,100);
     overflow: hidden;
     
 }
