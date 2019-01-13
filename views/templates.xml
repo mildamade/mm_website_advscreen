@@ -1,12 +1,12 @@
 <odoo>
     <data>
-
         <template id="index">
         <head>
         <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
         <title>Screen</title>
         </head>
-        <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
+        <body style="margin:0">
+        <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden; margin:0;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" />
@@ -14,11 +14,12 @@
                         <t t-esc="product.name"/> 
                     </div>
                     <div class="productprice" > 
-                        <t t-esc="product.lst_price"/> 
+                       <t t-esc="round(product.lst_price)"/> Kč
                     </div>
                 </div>
             </t>
         </div>
+        </body>
         </template>
 
         <template id="index1">
@@ -27,16 +28,18 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen1</title>
         </head>
+        <body style="margin:0">
         <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}"/>
                        <div class="productprice" > 
-                       <t t-esc="product.lst_price"/> 
+                       <t t-esc="round(product.lst_price)"/> Kč
                     </div>
                 </div>
             </t>
         </div>
+        </body>
         </template>
 
         <template id="index2">
@@ -45,16 +48,18 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen2</title>
         </head>
+        <body style="margin:0">
         <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" />
                     <div class="productprice"  > 
-                        <t t-esc="product.lst_price"/> 
+                        <t t-esc="round(product.lst_price)"/> Kč
                     </div>
                 </div>
             </t>
         </div>
+        </body>
         </template>
 
         <template id="index3">
@@ -63,16 +68,18 @@
             <link rel="stylesheet" href="/mm_website_advscreen/static/src/css/index.css"/>
             <title>Screen3</title>
         </head>
+        <body style="margin:0">
         <div class="container" style="width:3840px; height: 2160px; background-color: rgba(190,182,180,100); overflow: hidden;">
             <t t-foreach="product" t-as="product">
                 <div class="offer"> 
                     <img t-attf-src="data:image/*;base64,{{product.image}}" />
                     <div class="productprice"  > 
-                        <t t-esc="product.lst_price"/> 
+                        <t t-esc="round(product.lst_price)"/> Kč
                     </div>
                 </div>
             </t>
         </div>
+        </body>
         </template>
     </data>
 </odoo>
