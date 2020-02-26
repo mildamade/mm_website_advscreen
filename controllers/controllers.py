@@ -15,7 +15,7 @@ class MmWebsiteAdvscreen(http.Controller):
         Product = http.request.env['product.product']
 
         return http.request.render('mm_website_advscreen.index1', {
-            'product': Product.search([ ['categ_id', '=', 'Screen 1'],['active', '=', True]  ]),
+            'product': Product.search([ ['categ_id', '=', 'Screen 1'],['active', '=', True]],limit=6 , order='__last_update asc'),
         })
     
         
@@ -24,7 +24,7 @@ class MmWebsiteAdvscreen(http.Controller):
         Product = http.request.env['product.product']
 
         return http.request.render('mm_website_advscreen.index2', {
-            'product': Product.search([ ['categ_id', '=', 'Screen 2'], ['active', '=', True] ]),
+            'product': Product.search([ ['categ_id', '=', 'Screen 2'], ['active', '=', True]],limit=6, order='__last_update asc'),
         })
 
     @http.route('/mm_website_advscreen/screen3/', auth='public')
@@ -32,7 +32,7 @@ class MmWebsiteAdvscreen(http.Controller):
         Product = http.request.env['product.product']
 
         return http.request.render('mm_website_advscreen.index3', {
-            'product': Product.search([ ['categ_id', '=', 'Screen 3'], ['active', '=', True] ]),
+            'product': Product.search([ ['categ_id', '=', 'Screen 3'], ['active', '=', True]],limit=6,  order='__last_update asc'),
         })
 
 
